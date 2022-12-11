@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Arista
+comment1.params=vertice1\ vertice2\ max\ min
+comment1.target=Arista(Vertice,\ Vertice,\ int,\ int)
+comment2.params=
+comment2.target=int\ getPeso()
+comment3.params=
+comment3.target=Vertice\ getvertice1()
+comment4.params=
+comment4.target=Vertice\ getvertice2()
+numComments=5

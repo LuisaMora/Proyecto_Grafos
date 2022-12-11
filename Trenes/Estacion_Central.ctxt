@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Estacion_Central
+comment1.params=nroEAmarilla\ nroTAmarilla\ CapTA\ nroPAmarilla\ nroDemandaA\ VmaxA\ VminA\ nroERoja\ nroTRoja\ CapTR\ nroPRoja\ VmaxR\ VminR\ nroEVerde\ nroTVerde\ CapTV\ nroPVerde\ VmaxV\ VminV
+comment1.target=Estacion_Central(int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int,\ int)
+comment2.params=numE\ numT\ CapT\ vmax\ vmin
+comment2.target=void\ CrearLineasEstaciones(int,\ int,\ int,\ int,\ int)
+comment3.params=
+comment3.target=void\ PlanificacionesLineas()
+comment4.params=variable\ aristas
+comment4.target=void\ CalcularRutas(Grafo,\ java.util.ArrayList)
+numComments=5

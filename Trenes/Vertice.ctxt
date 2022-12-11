@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=Vertice
+comment1.params=nombreEstacion\ capacidadTren\ NroTrenes
+comment1.target=Vertice(java.lang.String,\ int,\ int)
+comment2.params=
+comment2.target=java.lang.String\ getNombre()
+comment3.params=
+comment3.target=int\ getCapacidad()
+comment4.params=
+comment4.target=int\ getNroTrenes()
+numComments=5

@@ -1,0 +1,15 @@
+#BlueJ class context
+comment0.target=Grafo
+comment1.params=ve\ ar
+comment1.target=Grafo(java.util.ArrayList,\ java.util.ArrayList)
+comment2.params=nroestaciones\ nrodetrenes\ capacidadtren\ max\ min
+comment2.target=void\ CrearEstaciones(int,\ int,\ int,\ int,\ int)
+comment3.params=vertices
+comment3.target=void\ setvertices(java.util.ArrayList)
+comment4.params=aristas
+comment4.target=void\ setaristas(java.util.ArrayList)
+comment5.params=
+comment5.target=java.util.ArrayList\ getvertices()
+comment6.params=
+comment6.target=java.util.ArrayList\ getaristas()
+numComments=7
