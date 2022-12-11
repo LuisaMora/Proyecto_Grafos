@@ -9,6 +9,8 @@ public class Estacion_Central
     public ArrayList<Vertice> vx;
     public ArrayList<Arista> ax;
     int contador;
+    private int HoraE;
+    private int HoraS;
     public Estacion_Central(int nroEAmarilla,int nroTAmarilla,int CapTA,int nroPAmarilla,int nroDemandaA,int VmaxA,int VminA,int nroERoja,int nroTRoja,int CapTR,int nroPRoja,int VmaxR,int VminR,int nroEVerde,int nroTVerde,int CapTV,int nroPVerde,int VmaxV,int VminV)
     {
       contador=1;
@@ -82,14 +84,67 @@ public class Estacion_Central
         
     }
     public void CalcularRutas(Grafo variable,ArrayList<Arista> aristas){
+        HoraE=8;
+        int auxPeso=0;
         for(int i=0;i<a.size();i++){ 
             Arista arista=a.get(i);
             Vertice vertice1=arista.getvertice1();
             Vertice vertice2=arista.getvertice2();
+            if(vertice1.getNroTrenes()==2){
+               System.out.println(vertice1.getNombre());
+                for(int x=0;x<vertice1.getNroTrenes();x++){
+                x++;
+                System.out.println("Tren "+x+" "+(HoraE+ arista.getPeso())+":00");
+                System.out.println("Salida : "+vertice1.getNombre());
+                System.out.println("Llegada : "+vertice2.getNombre());
+                System.out.println("Precio Pasaje: "+(arista.getPeso()+x)+10);
+                System.out.println(" ");
+                x--;
+               }
+               System.out.println("-----------------------");
+            }else{
+               //System.out.println(vertice2.getNombre());
+                for(int x=0;x<vertice1.getNroTrenes();x++){
+                x++;
+                System.out.println("Tren "+x+" "+(HoraE+x)+":00");
+                System.out.println("Salida : "+vertice1.getNombre());
+                System.out.println("Llegada : "+vertice2.getNombre());
+                System.out.println("Precio Pasaje: "+(arista.getPeso()+x+10));
+                System.out.println(" ");
+                x--;
+               }
+               System.out.println(" ");
+            }
+            /*
+            if(vertice2.getNroTrenes()==2){
+               System.out.println(vertice1.getNombre());
+                for(int x=0;x<vertice2.getNroTrenes();x++){
+                x++;
+                System.out.println("Tren "+x+" "+(HoraE+ arista.getPeso())+":00");
+                System.out.println("Salida : "+vertice1.getNombre());
+                System.out.println("Llegada : "+vertice2.getNombre());
+                System.out.println(" ");
+                x--;
+               }
+               System.out.println("-----------------------");
+            }else{
+               //System.out.println(vertice2.getNombre());
+                for(int x=0;x<vertice2.getNroTrenes();x++){
+                x++;
+                System.out.println("Tren "+x+" "+(HoraE+x)+":00");
+                System.out.println("Salida : "+vertice1.getNombre());
+                System.out.println("Llegada : "+vertice2.getNombre());
+                System.out.println(" ");
+                x--;
+               }
+               System.out.println(" ");
+            }
+            
             System.out.println(" "); 
             System.out.println("Horario :"+((i+a.size())+2)+":00");
             System.out.println("Salida : "+vertice1.getNombre());
             System.out.println("Llegada : "+vertice2.getNombre());
+            */
             //System.out.println(a.get(i).getPeso());
         }
     }
